@@ -1,0 +1,174 @@
+*,
+*:before,
+*::after
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  .head{
+      background: #944510;
+      min-height: 100vh;
+      width: 100%;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+  }
+  nav{
+  display: flex;
+  align-items:center ;
+  padding: 20px 8%;
+  } 
+  nav .menu-img{
+      width: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+  
+  }
+  nav.logo1{
+      width: 100px;
+      cursor: pointer;
+  
+  }
+  nav ul{
+      flex: 1;
+      text-align: right;
+  }
+  nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 3px ;
+      margin-right: 10px;
+    
+      
+  }
+  nav ul li a {
+      text-decoration: none;
+      color: #fff;
+  }
+ 
+ a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+ }
+
+ a:after{
+    content:"";
+    position:absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+ }
+
+ a:hover:after{
+    width:100%;
+
+ }
+ .category{
+    margin:70px 0px;  
+   }
+  
+ .col-1{
+    
+    float: left;
+    width: 33%;
+    
+ }
+ .col-1 img{
+  width: 200px;
+
+ }
+ .small-container{
+
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+ }
+ 
+ .row::after {  
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+ .image{
+    width: 300px;
+    position: relative;
+    float: left;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+    
+    
+   }
+
+  .image-overlay{
+    position: absolute;
+    top: 0;
+    width: 203px; 
+    height: 99%;
+    background: rgba(0, 0,0,0.6);
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+   }
+
+  .image-overlay:hover 
+  {
+    opacity: 1;
+  }
+   
+  
+  .image-title{   
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .image-description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+
+  } 
+
+  
+  .image{
+    
+    float: left;
+    width: 33%;
+    padding-right: -0.1%;
+    padding-left: -0.9px;
+    margin: auto;
+    min-width: 1000;
+    height: auto;
+    vertical-align: middle;
+
+    
+ }
+ .image .image-tag{
+  width: 200px;
+
+ }
+.product{
+    margin:  auto;
+    max-width: 1000px;
+    vertical-align: auto;
+    align-items: center;
+    
+
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+  }

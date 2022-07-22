@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> light</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+
+
+
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+
+                <div>
+                    <div>
+                      <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="a.html">About</a></li>
+                    <li><a href="s.html">Services</a></li>
+                    <li><a href="c.html">Contact</a></li>
+                
+                </ul>
+           
+                    </div>
+                </div>
+            </div>
+           
+           
+           
+        </div>
+       
+
+     
+       
+        <header  class="showcase">
+            <div class="conatiner showcase-inner">
+                <h1>welcome</h1>
+                <p>To the Light</p>
+                <a href="#1" class="btn">EXPLORE NOW</a>
+            </div>
+            </div>          
+        </header>
+
+
+
+
+
+
+<div id="1"></div>
+        <div class="head" >
+    <nav>
+        <img src="images/logo1.png
+        " class="logo1">
+
+   <ul>
+    <li><a href="">latest</a></li>
+    <li><a href="Modern.html">Modern</a></li>
+    <li><a href="">contemporary</a></li>
+    <li><a href="">Affordable</a></li>
+
+</ul>
+<button type="button" onclick="toggleBtn()" id="btn"> <span></span></button>
+    </nav>
+    <div class="lamp-container">
+        <img src="images/lamp.png" class="lamp">
+        <img src="images/light.png" class="light" id="light">
+    </div>
+    <div class="text-container">
+         <h1>latest<br>in lighting</h1>
+         <p>This is your lamp turn it on </p>
+         <a href="">Check all options</a>
+         <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+         </div>
+        </div>
+</div>
+<script>
+    var btn =document.getElementById("btn");
+    var light =document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+
+    
+    </body>
+</html>

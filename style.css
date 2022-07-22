@@ -1,0 +1,402 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;
+
+}
+
+
+.head{
+    background: #944510;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+display: flex;
+align-items:center ;
+padding: 20px 8%;
+} 
+nav .menu-img{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+nav.logo1{
+    width: 100px;
+    cursor: pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px ;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background:#efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition:background 0.5s;
+
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+ }
+
+ a:after{
+    content:"";
+    position:absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+ }
+
+ a:hover:after{
+    width:100%;
+
+ }
+
+
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px ;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 26%;
+    width: 200px;
+   
+}
+.lamp{
+    width: 100%;
+}
+
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a{
+     text-decoration: none;
+     background: #00986f;
+     padding: 14px 40px;
+     display: inline-block;
+     color: #fff;
+     font-size: 18px;
+     margin-top: 30px;
+     border-radius: 50px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+}
+.control .line{
+   width: 250px;
+   height: 4px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 1px;
+
+}
+.control .line  span{
+   width: 50px;
+   height: 8px;
+  margin-top:-2px;
+  border-radius: 4px;
+  background: #00986f;
+  display: block;
+}
+
+
+.active{
+    background: green;
+}
+
+.active span{
+    background:#fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+:root{
+    --primary-color:rgba(13,110,139,0.75);
+    --overlay-color:rgba(24,39,51,0.85);
+    --menu-speed:0.75s;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.4;
+}
+.container{
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+
+}
+
+.showcase{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+.showcase:before{
+    content:'';
+    background: url('images/background4.png') center center/cover;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.showcase h1
+{
+    font-size: 4rem;
+
+}
+.btn{
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 40px;
+    scroll-behavior: smooth;
+
+
+
+}
+.btn :hover{
+    opacity: 0.7;
+}
+.menu-wrap
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+.menu-wrap .toggler
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+
+}
+.menu-wrap .hamburger
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/*hamburger-line*/
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+
+
+}
+
+/* top and bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after
+{
+    content: '';
+    position: absolute;
+    z-index: 1 ;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+}
+
+/*  move line down */
+.menu-wrap .hamburger > div:after
+{
+    top: 10px;
+
+}
+/* toggler  animate  */
+.menu-wrap .toggler:checked + .hamburger > div {
+
+    transform: rotate(135deg);
+
+}
+
+/* turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after
+{
+    top: 0;
+    transform: rotate(90deg);
+
+}
+
+
+
+/* rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div{
+
+    transform: rotate(225deg);
+}
+/* show menu */
+.menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+}
+.menu-wrap .toggler:checked ~ .menu > div{
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+   
+}
+
+.menu-wrap .toggler:checked ~ .menu > div  > div{
+   opacity: 1;
+   transition: opacity 0.4s ease;
+   
+}
+
+
+
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility:  hidden ;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+}
+.menu-wrap .menu > div{
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width:200vw ;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+   transform: scale(0);
+   transition: all 0.4s ease;
+
+
+}
+
+.menu-wrap .menu > div > div{
+
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0; 
+    transition: opacit 0.4s ease;
+}
+.menu-wrap .menu > div > div >ul >li {
+
+         list-style: none;
+         color: #fff;
+         font-size: 1.5rem;
+         padding: 1rem;
+}
+.menu-wrap .menu > div > div >ul >li >a{
+
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
